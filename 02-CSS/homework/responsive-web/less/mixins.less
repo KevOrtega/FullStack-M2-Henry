@@ -1,0 +1,30 @@
+// Mixins acá
+.registrate(@registrate-bg-color, @registrate-color) {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding: 1rem;
+    background-color: @registrate-bg-color;
+    color: @registrate-color;
+    border-radius: .8rem;
+    cursor: pointer;
+    box-shadow: none;
+    transition: background-color, color .3s;
+    
+    &:hover {
+        color: @ebony-clay;
+        background-color: @river-bend;
+    }
+}
+
+.title {
+    align-self: center;
+    padding: 2rem;
+    font-size: 3.2rem;
+}
+
+.nav-items {
+    padding: 0 1rem 1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.searchBar {
+    display: inline-flex;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    margin: auto;
+    padding: .5rem;
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+}
+
+.searchBar div {
+    position: relative;
+}
+.searchBar div button:nth-child(1) {
+    position: static;
+    visibility: hidden;
+}
+
+.searchBar div button {
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #e0ffff;
+    color: #708080;
+    cursor: pointer;
+    transition: filter .3s;
+}
+
+.searchBar div button:hover {
+    filter: brightness(1.05);
+}
